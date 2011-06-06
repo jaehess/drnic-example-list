@@ -1,0 +1,6 @@
+{{#collection SC.TemplateCollectionView contentBinding="Drnic.listsController.content"}}
+  List: {{content.title}}
+  {{#collection SC.TemplateCollectionView contentBinding=".parentView.content.lists"}}
+    SubList: {{content.title}}
+  {{/collection}}
+{{/collection}}
